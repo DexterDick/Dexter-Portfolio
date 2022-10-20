@@ -1,22 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab:wght@300;400;500;600&display=swap");
 :root {
-}
-
-html {
+  --bg-color-light: #547199;
+  --color-dark: #31343d;
+  --color-light-green: #92cccd;
+  --color-gray: #8493a2;
+  --font-serif: "Open Sans", sans-serif;
+  --font-robto: "Roboto Slab", serif;
 }
 
 body {
   max-width: 1920px;
   margin: 0 auto;
+  background-color: var(--bg-color-light);
+  font-family: var(--font-serif);
 }
 
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-dark);
+  padding: 10px 80px 10px 0px;
 }
 
-header img {
+nav a {
+  color: var(--color-light-green);
+}
+
+h1 {
+  display: inline-block;
+  background-color: var(--color-light-green);
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  padding-left: 3rem;
+}
+
+.about-me img {
+  float: left;
+  margin: 5px;
   width: 100px;
   height: auto;
+}
+.about-me p {
+  color: red;
 }
 
 nav ul {
@@ -24,7 +50,32 @@ nav ul {
   gap: 10px;
 }
 
+/* clear fix for floated element */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .projects {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+
+.hero {
+  background-image: url(/assets/images/AdobeStock_397851688.jpeg);
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  top: 53%;
+  left: 73%;
+  background-color: var(--color-light-green);
+  font-size: 3rem;
+  padding: 10px;
 }

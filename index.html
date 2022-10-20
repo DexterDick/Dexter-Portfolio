@@ -4,16 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/reset.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <title>Dexter Dick's portfolio projects</title>
   </head>
   <body>
     <header>
       <h1>Dexter Dick</h1>
-      <img
-        src="./assets/images/Dexter Dick.jpg"
-        alt="profile image of Dexter Dick"
-      />
       <nav>
         <ul>
           <li><a href="#about-me">About Me</a></li>
@@ -23,15 +20,25 @@
         </ul>
       </nav>
     </header>
-    <section class="hero"></section>
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Believe in yourself!</h2>
+      </div>
+    </section>
     <section id="about-me" class="about-me">
-      <div><h2>about me</h2></div>
       <div>
+        <h2>About me</h2>
+      </div>
+      <!-- added clear fix class to fix floated element -->
+      <div class="clearfix">
+        <img
+          src="./assets/images/Dexter Dick.jpg"
+          alt="profile image of Dexter Dick"
+        />
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque at
           vel accusantium mollitia delectus fuga modi sapiente dignissimos
           minima nisi qui tenetur sunt, ipsum assumenda nulla vero quae iure
-          vitae?
         </p>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque at
@@ -41,8 +48,9 @@
         </p>
       </div>
     </section>
+
     <section id="work" class="work">
-      <div><h2>work</h2></div>
+      <div><h2>Work</h2></div>
       <div>
         <main class="projects">
           <article class="project">
