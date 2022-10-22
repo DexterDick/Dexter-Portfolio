@@ -151,3 +151,20 @@ nav ul {
 .project-5 {
   background-image: url(../images/AdobeStock_397346149.jpeg);
 }
+
+.contact-me {
+  height: 10%;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.contact-me ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.contact-me li a {
+  text-decoration: none;
+  border-bottom: 3px solid var(--color-dark);
+  color: var(--color-dark);
+}
