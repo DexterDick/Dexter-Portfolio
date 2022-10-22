@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/css/reset.css" />
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Dexter Dick's portfolio projects</title>
   </head>
   <body>
@@ -25,12 +25,13 @@
         <h2>Believe in yourself!</h2>
       </div>
     </section>
-    <section id="about-me" class="about-me">
-      <div>
-        <h2>About me</h2>
+
+    <section id="about-me" class="about-me margin">
+      <div class="label">
+        <h3>About me</h3>
       </div>
       <!-- added clear fix class to fix floated element -->
-      <div class="clearfix">
+      <div>
         <img
           src="./assets/images/Dexter Dick.jpg"
           alt="profile image of Dexter Dick"
@@ -39,53 +40,64 @@
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque at
           vel accusantium mollitia delectus fuga modi sapiente dignissimos
           minima nisi qui tenetur sunt, ipsum assumenda nulla vero quae iure
-        </p>
-        <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque at
           vel accusantium mollitia delectus fuga modi sapiente dignissimos
           minima nisi qui tenetur sunt, ipsum assumenda nulla vero quae iure
           vitae?
         </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque at
+          vel accusantium mollitia delectus fuga modi sapiente dignissimos
+          minima nisi qui tenetur sunt, ipsum assumenda nulla vero quae iure
+          vitae? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Itaque at vel accusantium mollitia delectus fuga modi sapiente
+          dignissimos minima nisi qui tenetur sunt, ipsum assumenda nulla vero
+          quae iure vitae?
+        </p>
       </div>
     </section>
 
     <section id="work" class="work">
-      <div><h2>Work</h2></div>
-      <div>
+      <div class="label"><h3>Work</h3></div>
+      <div class="project-wrapper">
         <main class="projects">
-          <article class="project">
-            <h3>1</h3>
-            <p>CSS</p>
-          </article>
-          <article class="project">
-            <h3>2</h3>
-            <p>CSS</p>
-          </article>
-          <article class="project">
-            <h3>3</h3>
-            <p>CSS</p>
-          </article>
-          <article class="project">
-            <h3>4</h3>
-            <p>CSS</p>
-          </article>
-          <article class="project">
-            <h3>5</h3>
-            <p>CSS</p>
-          </article>
-          <article class="project">
-            <h3>6</h3>
-            <p>CSS</p>
-          </article>
-          <article class="project">
-            <h3>7</h3>
-            <p>CSS</p>
-          </article>
+          <a href="#">
+            <article class="project project-1">
+              <div class="highlight-text">
+                <h4>Portfolio</h4>
+                <p>HTML/CSS</p>
+              </div>
+            </article>
+          </a>
+          <a href="#">
+            <article class="project project-2">
+              <h4>2</h4>
+              <p>CSS</p>
+            </article>
+          </a>
+          <a href="#">
+            <article class="project project-3">
+              <h4>3</h4>
+              <p>CSS</p>
+            </article>
+          </a>
+          <a href="#">
+            <article class="project project-4">
+              <h4>4</h4>
+              <p>CSS</p>
+            </article>
+          </a>
+          <a href="#">
+            <article class="project project-5">
+              <h4>5</h4>
+              <p>CSS</p>
+            </article>
+          </a>
         </main>
       </div>
     </section>
-    <footer id="#contact-me">
-      <div><h2>Contact</h2></div>
+    <footer id="#contact-me" class="contact-me margin">
+      <div class="label"><h5>Contact</h5></div>
       <div>
         <ul>
           <li><a href="tel:+6478863992">647-886-3992</a></li>

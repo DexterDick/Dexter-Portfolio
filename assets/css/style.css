@@ -15,6 +15,30 @@ body {
   font-family: var(--font-serif);
 }
 
+/* utility classes */
+.label {
+  min-height: 100%;
+  text-align: right;
+  padding-right: 40px;
+  min-width: 10%;
+  max-width: 10%;
+  border-right: 3px solid var(--color-dark);
+}
+
+.margin {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+/* end of utility classes */
+
+.about-me,
+.work,
+.contact-me {
+  display: flex;
+  gap: 80px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -34,15 +58,16 @@ h1 {
   font-size: 3rem;
   padding-left: 3rem;
 }
-
-.about-me img {
-  float: left;
-  margin: 5px;
-  width: 100px;
-  height: auto;
+h3,
+h5 {
+  font-size: 2rem;
 }
-.about-me p {
-  color: red;
+
+h4 {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: var(--color-light-green);
 }
 
 nav ul {
@@ -50,20 +75,8 @@ nav ul {
   gap: 10px;
 }
 
-/* clear fix for floated element */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.projects {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
 .hero {
-  background-image: url(/assets/images/AdobeStock_397851688.jpeg);
+  background-image: url(../images/AdobeStock_397851688.jpeg);
   height: 400px;
   width: 100%;
   background-size: cover;
@@ -78,4 +91,62 @@ nav ul {
   background-color: var(--color-light-green);
   font-size: 3rem;
   padding: 10px;
+}
+
+.about-me img {
+  max-width: 100px;
+  float: left;
+  margin-right: 1rem;
+}
+
+.about-me p {
+  font-size: 20px;
+  line-height: 1.5;
+  max-width: 90%;
+}
+
+.project-wrapper {
+  width: 80%;
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.projects a {
+  text-decoration: none;
+}
+.highlight-text {
+  background-color: var(--color-light-green);
+  display: inline-block;
+  padding: 1rem;
+}
+
+.project {
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+  opacity: 0.75;
+}
+
+.project-1 {
+  background-image: url(../images/AdobeStock_112481406.jpeg);
+
+  grid-column: 1/3;
+  grid-row: span 2;
+}
+
+.project-2 {
+  background-image: url(../images/AdobeStock_231680254.jpeg);
+}
+.project-3 {
+  background-image: url(../images/AdobeStock_397346149.jpeg);
+}
+.project-4 {
+  background-image: url(../images/AdobeStock_397346149.jpeg);
+}
+.project-5 {
+  background-image: url(../images/AdobeStock_397346149.jpeg);
 }
