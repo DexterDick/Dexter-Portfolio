@@ -30,6 +30,12 @@ body {
   margin-bottom: 5rem;
 }
 
+.highlight-text {
+  background-color: var(--color-light-green);
+  display: inline-block;
+  padding: 1rem;
+}
+
 /* end of utility classes */
 
 .about-me,
@@ -117,11 +123,6 @@ nav ul {
 
 .projects a {
   text-decoration: none;
-}
-.highlight-text {
-  background-color: var(--color-light-green);
-  display: inline-block;
-  padding: 1rem;
 }
 
 .project {
