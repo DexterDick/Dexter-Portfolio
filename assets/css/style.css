@@ -9,6 +9,7 @@
 }
 
 html {
+  /* smooth scrolling */
   scroll-behavior: smooth;
 }
 
@@ -17,7 +18,7 @@ body {
   font-family: var(--font-serif);
 }
 
-/* utility classes */
+/*---------------------- utility classes -------------------------*/
 .label {
   min-height: 100%;
   text-align: right;
@@ -40,11 +41,14 @@ body {
   left: -1px;
   bottom: 20px;
 }
+/* controls max width on large screens */
 .container {
   max-width: 1920px;
   margin: 0 auto;
 }
-/* end of utility classes */
+/*--------------- end of utility classes------------------ */
+
+/* main content wrapper */
 main {
   width: 97%;
   margin: 0 auto;
@@ -148,6 +152,7 @@ nav ul {
   max-width: 90%;
 }
 
+/* project-wrapper controls width of content */
 .project-wrapper {
   width: 75%;
 }
@@ -211,6 +216,8 @@ nav ul {
   color: var(--color-dark);
 }
 
+/* medium screen size */
+
 @media screen and (max-width: 885px) {
   main {
     width: 97%;
@@ -233,6 +240,8 @@ nav ul {
     font-size: 0.92rem;
   }
 }
+
+/* small screen size */
 
 @media screen and (max-width: 645px) {
   header {
