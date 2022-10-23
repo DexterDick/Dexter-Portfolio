@@ -32,6 +32,9 @@ body {
   background-color: var(--color-light-green);
   display: inline-block;
   padding: 1rem;
+  position: absolute;
+  left: -1px;
+  bottom: 20px;
 }
 .container {
   max-width: 1920px;
@@ -51,6 +54,7 @@ main {
 
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background-color: var(--color-dark);
@@ -64,26 +68,26 @@ nav a {
 }
 
 nav a:link {
-  color: #265301;
+  color: white;
 }
 
 nav a:visited {
-  color: #437a16;
+  color: white;
 }
 
 nav a:focus {
   border-bottom: 1px solid;
-  background: #bae498;
+  background: green;
 }
 
 nav a:hover {
   border-bottom: 1px solid;
-  background: #cdfeaa;
+  background: var(--color-dark);
 }
 
 nav a:active {
   background: var(--color-light-green);
-  color: #cdfeaa;
+  color: red;
 }
 
 h1 {
@@ -122,7 +126,7 @@ nav ul {
 .hero-text {
   position: absolute;
   top: 53%;
-  left: 73%;
+  left: calc(100% - 500px);
   background-color: var(--color-light-green);
   font-size: 3rem;
   padding: 10px;
@@ -147,7 +151,7 @@ nav ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  gap: 10px;
+  gap: 15px;
 }
 
 .projects a {
@@ -159,37 +163,42 @@ nav ul {
   background-position: center;
   min-height: 300px;
   opacity: 0.75;
+  border: 3px solid var(--color-light-green);
+  position: relative;
 }
 
 .project-1 {
-  background-image: url(../images/AdobeStock_112481406.jpeg);
+  background-image: url(../images/horiseon-initial-appearance.jpeg);
 
   grid-column: 1/3;
   grid-row: span 2;
 }
 
 .project-2 {
-  background-image: url(../images/AdobeStock_231680254.jpeg);
+  background-image: url(../images/testimonials-grid.jpg);
 }
 .project-3 {
-  background-image: url(../images/AdobeStock_397346149.jpeg);
+  background-image: url(../images/AdobeStock_112481406.jpeg);
 }
 .project-4 {
-  background-image: url(../images/AdobeStock_397346149.jpeg);
+  background-image: url(../images/AdobeStock_231680254.jpeg);
 }
 .project-5 {
   background-image: url(../images/AdobeStock_397346149.jpeg);
 }
 
 .contact-me {
-  height: 10%;
+  height: 20%;
   font-weight: 600;
   font-size: 1.2rem;
 }
 .contact-me ul {
   display: flex;
+  flex-wrap: wrap;
+
   align-items: center;
   gap: 3rem;
+  margin-bottom: 3rem;
 }
 
 .contact-me li a {
@@ -199,15 +208,21 @@ nav ul {
 }
 
 @media screen and (max-width: 885px) {
+  main {
+    width: 97%;
+  }
   h1 {
     font-size: 2.5rem;
+    padding-left: 2rem;
   }
-  .hero-text {
-    font-size: 2rem;
-  }
+
   h3,
   h5 {
     font-size: 1.5rem;
+  }
+
+  .about-me p {
+    max-width: 95%;
   }
 
   .contact-me {
@@ -217,7 +232,19 @@ nav ul {
 
 @media screen and (max-width: 645px) {
   header {
+    flex-direction: column;
     padding: 10px 30px 10px 0px;
+    gap: 1rem;
+  }
+
+  .hero-text {
+    font-size: 2rem;
+    font-size: 2rem;
+    left: calc(100% - 350px);
+  }
+
+  h1 {
+    padding-left: 0;
   }
 
   .about-me,
