@@ -8,6 +8,10 @@
   --font-robto: "Roboto Slab", serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--bg-color-light);
   font-family: var(--font-serif);
@@ -115,7 +119,7 @@ nav ul {
 }
 
 .hero {
-  background-image: url(../images/AdobeStock_397851688.jpeg);
+  background-image: url(../images/hero.jpeg);
   height: 400px;
   width: 100%;
   background-size: cover;
@@ -178,13 +182,13 @@ nav ul {
   background-image: url(../images/testimonials-grid.jpg);
 }
 .project-3 {
-  background-image: url(../images/AdobeStock_112481406.jpeg);
+  background-image: url(../images/holder-1.jpeg);
 }
 .project-4 {
-  background-image: url(../images/AdobeStock_231680254.jpeg);
+  background-image: url(../images/holder-2.jpeg);
 }
 .project-5 {
-  background-image: url(../images/AdobeStock_397346149.jpeg);
+  background-image: url(../images/holder-3.jpeg);
 }
 
 .contact-me {
