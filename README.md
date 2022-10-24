@@ -24,10 +24,10 @@ I enjoyed building this personal portfolio and will continue to update the proje
 ## Screenshots
 
 The following image shows the web website appearance. on large screen.
-![Dexter's portfolio large screen](./assets/images/large-screen.png);
+![Dexter's portfolio large screen](./assets/images/large.png);
 
 The following image shows the web website appearance. on laptop screen.
 ![Dexter's portfolio laptop screen](./assets/images/laptop.png);
 
 The following image shows the web website appearance. on small screen 375px.
-![Dexter's portfolio laptop screen](./assets/images/mobile-375.png);
+![Dexter's portfolio laptop screen](./assets/images/small.png);

@@ -6,6 +6,7 @@
   --color-gray: #8493a2;
   --font-serif: "Open Sans", sans-serif;
   --font-robto: "Roboto Slab", serif;
+  --color-white: #ffffff;
 }
 
 html {
@@ -70,34 +71,41 @@ header {
   background-color: var(--color-dark);
   padding: 10px 80px 10px 0px;
 }
-nav a {
+nav a,
+footer a {
   color: var(--color-light-green);
   outline: none;
   text-decoration: none;
   padding: 2px 1px 0;
 }
 
-nav a:link {
-  color: white;
+nav a:link,
+footer a:link {
+  color: var(--color-white);
 }
 
-nav a:visited {
-  color: white;
+nav a:visited,
+footer a:visited {
+  color: var(--color-white);
 }
 
-nav a:focus {
+nav a:focus,
+footer a:focus {
   border-bottom: 1px solid;
   background: green;
 }
 
-nav a:hover {
+nav a:hover,
+footer a:hover {
   border-bottom: 1px solid;
-  background: var(--color-dark);
+  background: #0071bc;
+  font-weight: bold;
 }
 
-nav a:active {
+nav a:active,
+footer a:active {
   background: var(--color-light-green);
-  color: red;
+  color: var(--color-dark);
 }
 
 h1 {
@@ -274,6 +282,10 @@ nav ul {
   }
   h2 {
     font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
   }
 
   .about-me,
