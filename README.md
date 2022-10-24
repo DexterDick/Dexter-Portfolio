@@ -16,3 +16,18 @@ The project uses media queries to allow web page design and layout to automatica
 The project uses Semantic HTML to help screen readers, and other user devices determine the significance and context of web content to help users with accessibility needs.
 
 I enjoyed building this personal portfolio and will continue to update the project with skills and projects.
+
+[Dexter's Portfolio URL: ](https://dexterdick.github.io/Dexter-Portfolio/)
+
+[Github repository](https://github.com/DexterDick/Dexter-Portfolio)
+
+## Screenshots
+
+The following image shows the web website appearance. on large screen.
+![Dexter's portfolio large screen](./assets/images/large-screen.png);
+
+The following image shows the web website appearance. on laptop screen.
+![Dexter's portfolio laptop screen](./assets/images/laptop.png);
+
+The following image shows the web website appearance. on small screen 375px.
+![Dexter's portfolio laptop screen](./assets/images/mobile-375.png);
