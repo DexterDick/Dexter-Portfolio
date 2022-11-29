@@ -1,311 +1,311 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab:wght@300;400;500;600&display=swap");
 :root {
-  --bg-color-light: #547199;
-  --color-dark: #31343d;
-  --color-light-green: #92cccd;
-  --color-gray: #8493a2;
-  --font-serif: "Open Sans", sans-serif;
-  --font-robto: "Roboto Slab", serif;
-  --color-white: #ffffff;
+    --bg-color-light: #547199;
+    --color-dark: #31343d;
+    --color-light-green: #92cccd;
+    --color-gray: #8493a2;
+    --font-serif: "Open Sans", sans-serif;
+    --font-robto: "Roboto Slab", serif;
+    --color-white: #ffffff;
 }
 
 html {
-  /* smooth scrolling */
-  scroll-behavior: smooth;
-  /* using brower vw to cal font size on screen */
-  font-size: calc(16px + 1 * ((100vw - 320px) / 680));
+    /* smooth scrolling */
+    scroll-behavior: smooth;
+    /* using brower vw to cal font size on screen */
+    font-size: calc(16px + 1 * ((100vw - 320px) / 680));
 }
 
 body {
-  background-color: var(--bg-color-light);
-  font-family: var(--font-serif);
+    background-color: var(--bg-color-light);
+    font-family: var(--font-serif);
 }
 
 /*---------------------- utility classes -------------------------*/
 .label {
-  min-height: 100%;
-  text-align: right;
-  padding-right: 2%;
-  min-width: 15%;
-  max-width: 15%;
-  border-right: 3px solid var(--color-dark);
+    min-height: 100%;
+    text-align: right;
+    padding-right: 2%;
+    min-width: 15%;
+    max-width: 15%;
+    border-right: 3px solid var(--color-dark);
 }
 
 .margin {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .highlight-text {
-  background-color: var(--color-light-green);
-  display: inline-block;
-  padding: 1rem;
-  position: absolute;
-  left: -1px;
-  bottom: 20px;
+    background-color: var(--color-light-green);
+    display: inline-block;
+    padding: 1rem;
+    position: absolute;
+    left: -1px;
+    bottom: 20px;
 }
 /* controls max width on large screens */
 .container {
-  max-width: 1920px;
-  margin: 0 auto;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 /*--------------- end of utility classes------------------ */
 
 /* main content wrapper */
 main {
-  width: 97%;
-  margin: 0 auto;
+    width: 97%;
+    margin: 0 auto;
 }
 .about-me,
 .work,
 .contact-me {
-  display: flex;
-  gap: 5%;
+    display: flex;
+    gap: 5%;
 }
 
 header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--color-dark);
-  padding: 10px 80px 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-dark);
+    padding: 10px 80px 10px 0px;
 }
 nav a,
 footer a {
-  color: var(--color-light-green);
-  outline: none;
-  text-decoration: none;
-  padding: 2px 1px 0;
+    color: var(--color-light-green);
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
 }
 
 nav a:link,
 footer a:link {
-  color: var(--color-white);
+    color: var(--color-white);
 }
 
 nav a:visited,
 footer a:visited {
-  color: var(--color-white);
+    color: var(--color-white);
 }
 
 nav a:focus,
 footer a:focus {
-  border-bottom: 1px solid;
-  background: green;
+    border-bottom: 1px solid;
+    background: green;
 }
 
 nav a:hover,
 footer a:hover {
-  border-bottom: 1px solid;
-  background: #0071bc;
-  font-weight: bold;
+    border-bottom: 1px solid;
+    background: #0071bc;
+    font-weight: bold;
 }
 
 nav a:active,
 footer a:active {
-  background: var(--color-light-green);
-  color: var(--color-dark);
+    background: var(--color-light-green);
+    color: var(--color-dark);
 }
 
 h1 {
-  display: inline-block;
-  background-color: var(--color-light-green);
-  font-family: var(--font-serif);
-  font-size: 3rem;
-  padding-left: 3rem;
+    display: inline-block;
+    background-color: var(--color-light-green);
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    padding-left: 3rem;
 }
 h2 {
-  font-size: 2.3rem;
+    font-size: 2.3rem;
 }
 
 h3,
 h5 {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 h4 {
-  display: inline-block;
-  font-size: 1.5rem;
-  font-weight: 600;
-  background-color: var(--color-light-green);
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: var(--color-light-green);
 }
 
 nav ul {
-  display: flex;
-  gap: 10px;
+    display: flex;
+    gap: 10px;
 }
 
 .hero {
-  background-image: url(../images/hero.jpeg);
-  height: 400px;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  position: relative;
+    background-image: url(../images/hero.jpeg);
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
 .hero-text {
-  position: absolute;
-  top: 53%;
-  /* using the brower width to calculate position of text on screen */
-  left: calc(100% - 500px);
-  background-color: var(--color-light-green);
-  padding: 10px;
+    position: absolute;
+    top: 53%;
+    /* using the brower width to calculate position of text on screen */
+    left: calc(100% - 500px);
+    background-color: var(--color-light-green);
+    padding: 10px;
 }
 
 .about-me img {
-  max-width: 100px;
-  float: left;
-  margin-right: 1rem;
+    max-width: 100px;
+    float: left;
+    margin-right: 1rem;
 }
 
 .about-me p {
-  font-size: 1.25rem;
-  line-height: 1.5;
-  max-width: 90%;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    max-width: 90%;
 }
 
 /* project-wrapper controls width of content */
 .project-wrapper {
-  width: 75%;
+    width: 75%;
 }
 .projects {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 15px;
 }
 
 .projects a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .project {
-  background-size: cover;
-  background-position: center;
-  min-height: 300px;
-  /* makes project color lighter */
-  opacity: 0.75;
-  border: 3px solid var(--color-light-green);
-  position: relative;
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    /* makes project color lighter */
+    opacity: 0.75;
+    border: 3px solid var(--color-light-green);
+    position: relative;
 }
 
 .project:hover {
-  /* on hover changes color to 100% */
-  opacity: 1;
-  /* make image .o1 larger */
-  scale: 1.01;
-  transition: all 0.25s;
+    /* on hover changes color to 100% */
+    opacity: 1;
+    /* make image .o1 larger */
+    scale: 1.01;
+    transition: all 0.25s;
 }
 
 .project-1 {
-  background-image: url(../images/horiseon-initial-appearance.jpeg);
-  /* make project one twice as large as other porjects */
-  grid-column: 1/3;
-  grid-row: span 2;
+    background-image: url(../images/horiseon-initial-appearance.jpeg);
+    /* make project one twice as large as other porjects */
+    grid-column: 1/3;
+    grid-row: span 2;
 }
 
 .project-2 {
-  background-image: url(../images/testimonials-grid.jpg);
+    background-image: url(../images/testimonials-grid.jpg);
 }
 .project-3 {
-  background-image: url(../images/holder-1.jpeg);
+    background-image: url(../images/group.png);
 }
 .project-4 {
-  background-image: url(../images/holder-2.jpeg);
+    background-image: url(../images/holder-2.jpeg);
 }
 .project-5 {
-  background-image: url(../images/holder-3.jpeg);
+    background-image: url(../images/holder-3.jpeg);
 }
 
 .contact-me {
-  height: 20%;
-  font-weight: 600;
-  font-size: 1.2rem;
+    height: 20%;
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 .contact-me ul {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 
-  align-items: center;
-  gap: 3rem;
-  margin-bottom: 3rem;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
 }
 
 .contact-me li a {
-  text-decoration: none;
-  border-bottom: 3px solid var(--color-dark);
-  color: var(--color-dark);
+    text-decoration: none;
+    border-bottom: 3px solid var(--color-dark);
+    color: var(--color-dark);
 }
 
 /* medium screen size */
 
 @media screen and (max-width: 885px) {
-  main {
-    width: 93%;
-  }
-  h1 {
-    font-size: 2.5rem;
-    padding-left: 2rem;
-  }
+    main {
+        width: 93%;
+    }
+    h1 {
+        font-size: 2.5rem;
+        padding-left: 2rem;
+    }
 
-  h3,
-  h5 {
-    font-size: 1.5rem;
-  }
+    h3,
+    h5 {
+        font-size: 1.5rem;
+    }
 
-  .about-me p {
-    max-width: 95%;
-  }
+    .about-me p {
+        max-width: 95%;
+    }
 
-  .contact-me {
-    font-size: 0.92rem;
-  }
+    .contact-me {
+        font-size: 0.92rem;
+    }
 }
 
 /* small screen size */
 
 @media screen and (max-width: 645px) {
-  header {
-    flex-direction: column;
-    padding: 10px 30px 10px 0px;
-    gap: 1rem;
-  }
+    header {
+        flex-direction: column;
+        padding: 10px 30px 10px 0px;
+        gap: 1rem;
+    }
 
-  .hero-text {
-    left: calc(100% - 350px);
-  }
+    .hero-text {
+        left: calc(100% - 350px);
+    }
 
-  h1 {
-    padding-left: 0;
-  }
-  h2 {
-    font-size: 2rem;
-  }
+    h1 {
+        padding-left: 0;
+    }
+    h2 {
+        font-size: 2rem;
+    }
 
-  h4 {
-    font-size: 1.2rem;
-  }
+    h4 {
+        font-size: 1.2rem;
+    }
 
-  .about-me,
-  .work,
-  .contact-me {
-    display: flex;
-    flex-direction: column;
-    gap: 5%;
-  }
+    .about-me,
+    .work,
+    .contact-me {
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+    }
 
-  .label {
-    min-width: 100%;
-    text-align: left;
-    border-right: none;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    text-align: center;
-  }
+    .label {
+        min-width: 100%;
+        text-align: left;
+        border-right: none;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
 
-  .project-wrapper {
-    width: 100%;
-  }
+    .project-wrapper {
+        width: 100%;
+    }
 }
